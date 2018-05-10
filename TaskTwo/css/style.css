@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	overflow: hidden;
+	width: 100%;
+	background-color: #333333;
+}
+p{
+	font-family: sans-serif;
+}
+#header div p a,#header h2{
+	font-family: sans-serif;
+	color: white;
+}
+#header div:nth-of-type(1){
+	width: 40%;
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 1em;
+ 	padding-left: 8%;
+}
+#header div:nth-of-type(2){
+	text-align: right;
+	width: 40%;
+	float: right;
+	padding-right: 8%;
+}
+#header div:nth-of-type(2) p{
+	display: inline;
+}
+#nav{
+	position: relative;
+	overflow: hidden;
+	height: 10em;
+	background-color: #66bb33;
+}
+#nav div{
+	position: absolute;
+	right: 8%;
+	bottom: 4%;
+}
+#nav div a{
+	border: 1px solid #335e1a;
+	text-decoration: none;
+	background-color: #b2dd99;
+	padding: 0 4px;
+	color: black;
+}
+#nav div a:hover{
+	padding-top: 10px;
+	background-color: #e0f1d6;
+	transition: all.3s;
+}
+#bodynav{
+	border-bottom: 1px solid #dddddd;
+}
+#bodynav div{
+	margin-left: 8%;
+	margin-top: 2%;
+	font-size: 0;
+}
+#bodynav div span{
+	border: 1px solid #dddddd;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 0px;
+	padding: 8px 8px 0px 8px;
+	margin-bottom: 8px;
+	font-size: 10px;
+}
+#bodynav div span:first-child{
+	border-bottom: 1px solid white;
+}
+#bodycontent{
+	margin-left: 8%;
+	margin-right: 8%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-content: center;
+}
+#bodycontent div{
+	width: 22%;
+	height: 8em;
+	border: 1px solid #dddddd;
+	margin-top: 1em;
+	text-align: center;
+	line-height: 8em;
+}
+#bodycontent div:nth-of-type(1){
+	padding-left: 8%;
+	padding-right: 8%;
+	margin-right: 2%;
+}
+#bodycontent div:nth-of-type(2){
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-right: 2%;
+}
+#bodycontent div:nth-of-type(5){
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#bodycontent div:nth-of-type(6){
+	margin-right: 2%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+#bodycontent div:nth-of-type(9){
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#bodycontent div:nth-of-type(n+8):nth-of-type(-n+10){
+	padding-left: 4.333333333%;
+	padding-right: 4.333333333%;
+}
+#footer{
+	text-align: center;
+	background-color: #666666;
+	padding-top: 1em;
+	padding-bottom: 3em;
+	margin-top: 1em;
+}
+#footer p a{
+	color: white;
+	text-decoration: none;
+}
